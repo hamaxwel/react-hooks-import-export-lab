@@ -1,11 +1,15 @@
-import React from "react";
+// src/components/Home.js
+import React from 'react';
+import { username, city } from '../data/user'; // Correct relative path and named imports
 
-function Home() {
+const Home = () => {
   return (
-    <div id="home">
-      <h1>
-        {username} is a Web Developer from {city}
-      </h1>
-    </div>
+    <section>
+      <h2>Welcome to My Portfolio</h2>
+      <p>Username: {username}</p>
+      <p>City: {city}</p>
+    </section>
   );
-}
+};
+
+export default Home;
